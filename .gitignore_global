@@ -37,3 +37,9 @@ ehthumbs.db
 Thumbs.db
 .idea/
 .vagrant/
+
+# Application specific files
+######################
+vendor
+node_modules
+.sass-cache
