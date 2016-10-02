@@ -39,7 +39,9 @@ brew 'wget'
 #brew 'httpie'
 
 # Development
+brew 'php56'
 brew 'php70', args: ['with-debug', 'without-apache']
+brew 'php71', args: ['with-debug', 'without-apache']
 brew 'homebrew/php/php70-mcrypt'
 brew 'homebrew/php/php70-imagick'
 brew 'homebrew/php/php70-redis'

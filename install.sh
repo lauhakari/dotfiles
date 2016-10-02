@@ -1,6 +1,8 @@
 #!/bin/sh
 
 echo "Setting up your Mac..."
+echo "Starting with brew."
+echo '----------------------'
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
@@ -15,22 +17,37 @@ brew tap homebrew/bundle
 brew bundle
 
 # Make ZSH the default shell environment
-chsh -s $(which zsh)
+#chsh -s $(which zsh)
 
-# Install Composer
+
+echo 'Installing composer.'
+echo '--------------------'
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/valet tightenco/jigsaw
+echo 'Install global Composer packages'
+echo '--------------------'
+/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/valet tightenco/jigsaw hirak/prestissimo
 
-# Install Laravel Valet
+echo "Install Laravel Valet"
+echo '----------------------'
 $HOME/.composer/vendor/bin/valet install
+
+echo 'Install global NPM packages'
+echo '--------------------'
+npm install -g grunt grunt-cli gulp eslint jscs jshint vue vue-cli jsonlint
 
 # Create a Sites directory
 # This is a default directory for OS X user accounts but doesn't comes pre-installed
 mkdir $HOME/Sites
 
-# Set OS X preferences
+# Move .dotfiles with settings to home directory (if you don't have a mackup backup).
+echo 'copy settings files to ~/ directory'
+echo '-----------------------------------'
+cp -R settings/. $HOME
+
+
 # We will run this last because this will reload the shell
-source .osx
+echo 'Set OS X preferences'
+echo '--------------------'
+source .macos

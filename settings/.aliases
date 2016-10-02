@@ -9,13 +9,33 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias d="cd $HOME/Documents/Dropbox"
+alias od="cd $HOME/Documents/OneDrive"
+alias gd="cd $HOME/Documents/Google\ Drive"
+alias dl="cd $HOME/Downloads"
+alias dt="cd $HOME/Desktop"
+alias dotfiles="cd $DOTFILES"
+alias library="cd $HOME/Library"
+alias projects="cd $HOME/Projects"
+alias sites="cd $HOME/Sites"
+
 alias g="git"
 alias h="history"
 alias j="jobs"
+
+# Laravel
+alias art="php artisan"
+
+# Vagrant
+alias v="vagrant global-status"
+alias vup="vagrant up"
+alias vhalt="vagrant halt"
+alias vssh="vagrant ssh"
+alias vreload="vagrant reload"
+alias vrebuild="vagrant destroy --force && vagrant up"
+
+#phpstorm
+alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
