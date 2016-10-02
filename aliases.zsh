@@ -20,3 +20,6 @@ alias vhalt="vagrant halt"
 alias vssh="vagrant ssh"
 alias vreload="vagrant reload"
 alias vrebuild="vagrant destroy --force && vagrant up"
+
+#phpstorm
+alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
