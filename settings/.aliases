@@ -111,11 +111,9 @@ alias o="open ."
 # List all files colorized in long format
 alias l="ls -laF"
 
-#phpstorm
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
-
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
+alias copy="pbcopy <"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"

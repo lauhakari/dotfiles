@@ -19,6 +19,8 @@ brew bundle
 # Make ZSH the default shell environment
 #chsh -s $(which zsh)
 
+#Do NPM specific stuff
+npm set progress=false
 
 echo 'Installing composer.'
 echo '--------------------'

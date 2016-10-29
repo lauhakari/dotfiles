@@ -11,8 +11,8 @@ tap 'homebrew/homebrew-php'
 cask_args appdir: '/Applications'
 
 # Install ZSH
-brew 'zsh'
-brew 'zsh-completions'
+#brew 'zsh'
+#brew 'zsh-completions'
 
 # Install GNU core utilities (those that come with OS X are outdated)
 brew 'coreutils'
@@ -39,12 +39,14 @@ brew 'wget'
 #brew 'httpie'
 
 # Development
-brew 'php56'
+#brew 'php56'
 brew 'php70', args: ['with-debug', 'without-apache']
-brew 'php71', args: ['with-debug', 'without-apache']
+#brew 'php71', args: ['with-debug', 'without-apache']
+brew link php70
 brew 'homebrew/php/php70-mcrypt'
 brew 'homebrew/php/php70-imagick'
 brew 'homebrew/php/php70-redis'
+brew 'homebrew/php/php-cs-fixer'
 brew 'mariadb'
 
 # Apps
