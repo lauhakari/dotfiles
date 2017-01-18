@@ -49,7 +49,7 @@ echo '-----------------------------------'
 cp -R settings/. $HOME
 
 
-# TEMP REMOVED - because doesn't seem to work correctly with Sierra
+# TEMP REMOVED - because doesn't s
 # We will run this last because this will reload the shell
 #echo 'Set OS X preferences'
 #echo '--------------------'
