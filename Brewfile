@@ -10,9 +10,6 @@ tap 'homebrew/homebrew-php'
 # Make sure apps get installed in system Applications dir
 cask_args appdir: '/Applications'
 
-# Install ZSH
-#brew 'zsh'
-#brew 'zsh-completions'
 
 # Install GNU core utilities (those that come with OS X are outdated)
 brew 'coreutils'
@@ -29,64 +26,63 @@ brew 'homebrew/dupes/grep'
 # Install Binaries
 #brew 'awscli'
 brew 'python'
+brew 'node'
 brew 'git'
 brew 'hub'
 brew 'tree'
 brew 'mackup'
-brew 'node'
 brew 'trash'
 brew 'wget'
-#brew 'httpie'
+brew 'httpie'
 
 # Development
 #brew 'php56'
-brew 'php70', args: ['with-debug', 'without-apache']
-#brew 'php71', args: ['with-debug', 'without-apache']
-brew link php70
-brew 'homebrew/php/php70-mcrypt'
-brew 'homebrew/php/php70-imagick'
-brew 'homebrew/php/php70-redis'
-brew 'homebrew/php/php-cs-fixer'
+brew 'php71', args: ['with-debug', 'without-apache']
+brew link php71
+brew 'php71-mcrypt'
+brew 'php71-imagick'
+brew 'php71-redis'
+brew 'php71-intl'
+brew 'php-cs-fixer'
 brew 'mariadb'
+brew 'wp-cli'
 
-# Apps
+# Install some common Apps
+
 cask 'alfred'
-cask 'avast'
-cask 'dash'
+# cask 'avast'
+# cask 'dash'
 cask 'flux'
 cask 'lastpass'
-cask 'rescuetime'
 cask 'spotify'
 cask 'spectacle'
 cask 'toggldesktop'
 cask 'vlc'
 cask 'utorrent'
-cask 'callnote-premium'
-# Files & Storage
+# cask 'callnote-premium'
+
+#---Files & Storage---#
 cask 'dropbox'
 cask 'google-drive'
+cask 'onedrive'
 cask 'filezilla'
-cask 'cornerstone'
 cask 'sourcetree'
 cask 'the-unarchiver'
-# Browsers
-cask 'onedrive'
+#---Browsers---#
 cask 'firefox'
 cask 'google-chrome'
 cask 'opera'
-# Communication
+#---Communication---#
 cask 'skype'
 cask 'slack'
 cask 'whatsapp'
 cask 'google-hangouts'
-cask 'microsoft-lync'
-cask 'microsoft-lync-plugin'
-# Editors
-cask 'atom'
+#---Editors---#
+cask 'visual-studio-code'
 cask 'phpstorm'
-cask 'sublime-text3'
+# cask 'sublime-text3'
 cask 'adobe-creative-cloud'
-# DevTools
+#---DevTools---#
 cask 'mysqlworkbench'
 cask 'sequel-pro'
 cask 'poedit'
@@ -95,7 +91,6 @@ cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'vagrant'
 cask 'vagrant-manager'
-cask 'iterm2'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -112,3 +107,4 @@ cask 'font-sauce-code-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
+cask 'font-fira-code'

@@ -37,11 +37,14 @@ $HOME/.composer/vendor/bin/valet install
 
 echo 'Install global NPM packages'
 echo '--------------------'
-npm install -g grunt grunt-cli gulp eslint jscs jshint vue vue-cli jsonlint yarn
+npm install -g yarn gulp eslint jshint vue vue-cli
+# other usefulls ones include: jsonlint grunt grunt-cli jscs jshint
 
 # Create a Sites directory
 # This is a default directory for OS X user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
+mkdir $HOME/Dev
+mkdir $HOME/Dev/Sites
+mkdir $HOME/Dev/Projects
 
 # Move .dotfiles with settings to home directory (if you don't have a mackup backup).
 echo 'copy settings files to ~/ directory'
