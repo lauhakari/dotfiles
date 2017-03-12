@@ -36,13 +36,13 @@ brew 'wget'
 brew 'httpie'
 
 # Development
-#brew 'php56'
-brew 'php71', args: ['with-debug', 'without-apache']
-brew link php71
-brew 'php71-mcrypt'
-brew 'php71-imagick'
-brew 'php71-redis'
-brew 'php71-intl'
+# brew 'php56'
+# brew 'homebrew/homebrew-php/php71', args: ['with-debug', 'without-apache']
+# brew link php71
+brew 'homebrew/homebrew-php/php71-mcrypt'
+brew 'homebrew/homebrew-php/php71-imagick'
+brew 'homebrew/homebrew-php/php71-redis'
+brew 'homebrew/homebrew-php/php71-intl'
 brew 'php-cs-fixer'
 brew 'mariadb'
 brew 'wp-cli'

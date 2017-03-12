@@ -11,7 +11,7 @@ alias -- -="cd -"
 # Shortcuts
 alias d="cd $HOME/Documents/Dropbox"
 alias od="cd $HOME/Documents/OneDrive"
-alias gd="cd $HOME/Documents/Google\ Drive"
+alias gd="cd $HOME/Documents/GoogleDrive"
 alias dl="cd $HOME/Downloads"
 alias dt="cd $HOME/Desktop"
 alias dotfiles="cd $DOTFILES"

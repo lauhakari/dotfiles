@@ -17,7 +17,7 @@ brew tap homebrew/bundle
 brew bundle
 
 # Make ZSH the default shell environment
-#chsh -s $(which zsh)
+# chsh -s $(which zsh)
 
 #Do NPM specific stuff
 npm set progress=false
@@ -42,9 +42,8 @@ npm install -g yarn gulp eslint jshint vue vue-cli
 
 # Create a Sites directory
 # This is a default directory for OS X user accounts but doesn't comes pre-installed
-mkdir $HOME/Dev
-mkdir $HOME/Dev/Sites
-mkdir $HOME/Dev/Projects
+mkdir $HOME/Sites
+mkdir $HOME/Projects
 
 # Move .dotfiles with settings to home directory (if you don't have a mackup backup).
 echo 'copy settings files to ~/ directory'
