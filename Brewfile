@@ -15,7 +15,6 @@ brew "awscli"
 brew "bash"
 brew "bat"
 brew "coreutils"
-brew 'composer'
 brew "dnsmasq", restart_service: true
 brew "elasticsearch", restart_service: true
 brew "findutils"
@@ -36,6 +35,7 @@ brew "php", restart_service: true
 brew "pho@7.1"
 brew 'php-cs-fixer'
 brew 'phpunit'
+brew 'mysql@5.7'
 brew "trash"
 brew "tree"
 brew "wget"
