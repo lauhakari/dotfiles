@@ -32,7 +32,7 @@ brew "mas"
 brew "nginx", restart_service: true
 brew "node"
 brew "php", restart_service: true
-brew "pho@7.1"
+brew "php@7.1"
 brew 'php-cs-fixer'
 brew 'phpunit'
 brew 'mysql@5.7'
