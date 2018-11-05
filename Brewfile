@@ -40,7 +40,7 @@ brew "trash"
 brew "tree"
 brew "wget"
 brew "wp-cli"
-brew "yarn" --without-node
+brew "yarn"
 cask "adobe-creative-cloud"
 cask "alfred"
 cask "betterzipql"
