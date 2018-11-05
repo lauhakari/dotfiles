@@ -9,9 +9,3 @@ Most applications get installed through Homebrew Cask. The apps below need to be
 - Tweetdeck
 - GarageBand
 - Parcel
-
-
-# Work Applications
-- SolusBC
-- MAMP
-- Forti Client

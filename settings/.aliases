@@ -26,6 +26,8 @@ alias j="jobs"
 # Laravel
 alias art="php artisan"
 
+alias mysqladm='mysql -u root'
+
 # Vagrant
 alias v="vagrant global-status"
 alias vup="vagrant up"
@@ -108,9 +110,6 @@ unset jscbin;
 
 # Fast open
 alias o="open ."
-
-# List all files colorized in long format
-alias l="ls -laF"
 
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
